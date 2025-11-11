@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社テックスタジオ - 会社紹介</title>
+  <meta name="description" content="株式会社テックスタジオの会社紹介ページです。">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <h1>株式会社テックスタジオ</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">会社概要</a></li>
+        <li><a href="#team">チーム紹介</a></li>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <!-- 会社概要セクション -->
+    <section id="about">
+      <h2>会社概要</h2>
+      <p>
+        株式会社テックスタジオは、<strong>Web技術</strong>を活用した
+        <em>革新的なソリューション</em>を提供する会社です。
+      </p>
+      <p>
+        私たちは2010年に設立され、これまでに多くのプロジェクトを成功させてきました。
+      </p>
+      
+      <!-- 詳細情報（折りたたみ） -->
+      <details>
+        <summary>もっと詳しく見る</summary>
+        <dl>
+          <dt>設立</dt>
+          <dd>2010年4月1日</dd>
+          <dt>資本金</dt>
+          <dd>1,000万円</dd>
+          <dt>従業員数</dt>
+          <dd>50名</dd>
+          <dt>所在地</dt>
+          <dd>東京都渋谷区...</dd>
+        </dl>
+      </details>
+    </section>
+
+    <!-- チーム紹介セクション -->
+    <section id="team">
+      <h2>チーム紹介</h2>
+      <p>私たちのチームは、多様なスキルを持つメンバーで構成されています。</p>
+      
+      <article>
+        <h3>開発チーム</h3>
+        <p>フロントエンドからバックエンドまで、幅広い技術スタックに対応しています。</p>
+        <ul>
+          <li>フロントエンド開発者: 15名</li>
+          <li>バックエンド開発者: 12名</li>
+          <li>インフラエンジニア: 5名</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>デザインチーム</h3>
+        <p>ユーザー体験を重視したデザインを提供します。</p>
+        <ol>
+          <li>UI/UXデザイナー: 8名</li>
+          <li>グラフィックデザイナー: 5名</li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- サービスセクション -->
+    <section id="services">
+      <h2>サービス</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>サービス名</th>
+            <th>説明</th>
+            <th>料金</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Webサイト制作</td>
+            <td>企業向けWebサイトの制作</td>
+            <td>50万円〜</td>
+          </tr>
+          <tr>
+            <td>Webアプリ開発</td>
+            <td>カスタムWebアプリケーションの開発</td>
+            <td>100万円〜</td>
+          </tr>
+          <tr>
+            <td>コンサルティング</td>
+            <td>技術選定やアーキテクチャの相談</td>
+            <td>10万円〜</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 画像の例 -->
+      <figure>
+        <img src="https://via.placeholder.com/800x400" alt="サービスイメージ画像" width="800" height="400">
+        <figcaption>私たちのサービスイメージ</figcaption>
+      </figure>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <p>お気軽にお問い合わせください。</p>
+      
+      <form action="#" method="post">
+        <p>
+          <label for="name">お名前:</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+        
+        <p>
+          <label for="email">メールアドレス:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        
+        <p>
+          <label for="inquiry-type">お問い合わせ種別:</label>
+          <select id="inquiry-type" name="inquiry-type">
+            <option value="">選択してください</option>
+            <option value="web">Webサイト制作</option>
+            <option value="app">Webアプリ開発</option>
+            <option value="consulting">コンサルティング</option>
+            <option value="other">その他</option>
+          </select>
+        </p>
+        
+        <p>
+          <label for="message">メッセージ:</label>
+          <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </p>
+        
+        <p>
+          <label>
+            <input type="checkbox" name="newsletter" value="yes">
+            メールマガジンの配信を希望する
+          </label>
+        </p>
+        
+        <button type="submit">送信</button>
+      </form>
+
+      <!-- ダイアログの例 -->
+      <dialog id="confirm-dialog">
+        <p>お問い合わせ内容を送信しますか？</p>
+        <form method="dialog">
+          <button type="submit" value="ok">OK</button>
+          <button type="submit" value="cancel">キャンセル</button>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- ダイアログを表示するボタンの例 -->
+    <section>
+      <h2>ダイアログの動作確認</h2>
+      <p>以下のボタンをクリックすると、ダイアログが表示されます。</p>
+      <button id="show-dialog-btn">ダイアログを表示</button>
+      
+      <h3>HTMLだけで表示するダイアログ（open属性使用）</h3>
+      <p>以下のダイアログは、HTMLの<code>open</code>属性を使って表示されています。JavaScriptは不要です。</p>
+      <dialog open>
+        <p>これはHTMLだけで表示されたダイアログです。</p>
+        <form method="dialog">
+          <button>閉じる</button>
+        </form>
+      </dialog>
+      
+      <p><strong>注意：</strong><code>open</code>属性を使うと、ページ読み込み時に自動的に表示されます。動的に開閉するにはJavaScriptが必要です。</p>
+    </section>
+
+    <!-- 区切り線 -->
+    <hr>
+
+    <!-- 補足情報 -->
+    <section>
+      <h2>補足情報</h2>
+      <p>
+        このページは<span style="color: #0066cc;">HTMLの学習用</span>のサンプルです。
+        <br>
+        実際の会社情報とは関係ありません。
+      </p>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2024 株式会社テックスタジオ. All rights reserved.</p>
+    <p>
+      <a href="#about">会社概要</a> |
+      <a href="#team">チーム紹介</a> |
+      <a href="#services">サービス</a> |
+      <a href="#contact">お問い合わせ</a>
+    </p>
+  </footer>
+
+  <script>
+    // ダイアログ要素を取得
+    const dialog = document.getElementById('confirm-dialog');
+    const form = document.querySelector('#contact form');
+    const showDialogBtn = document.getElementById('show-dialog-btn');
+
+    // フォーム送信時にダイアログを表示
+    if (form) {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // フォームの通常の送信を防ぐ
+        dialog.showModal(); // モーダルダイアログとして表示
+      });
+    }
+
+    // ボタンクリック時にダイアログを表示
+    if (showDialogBtn) {
+      showDialogBtn.addEventListener('click', function() {
+        dialog.showModal(); // モーダルダイアログとして表示
+      });
+    }
+
+    // ダイアログ内のOKボタンが押されたときの処理
+    dialog.addEventListener('close', function() {
+      const returnValue = dialog.returnValue;
+      if (returnValue === 'ok') {
+        alert('送信しました！');
+        // 実際の送信処理はここに記述
+        // form.submit(); など
+      } else {
+        console.log('キャンセルされました');
+      }
+    });
+  </script>
+</body>
+</html>
+
